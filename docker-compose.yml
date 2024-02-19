@@ -9,7 +9,7 @@ services:
     image: "aldinokemal2104/go-whatsapp-web-multidevice:latest"
     build:
       context: .
-      dockerfile: ./docker/golang.Dockerfile
+      dockerfile: ./docker/Dockerfile
     restart: 'always'
     ports:
       - "3000:3000"
