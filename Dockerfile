@@ -21,5 +21,7 @@ RUN apk update && apk add --no-cache vips-dev ffmpeg
 WORKDIR /app
 # Copy compiled from builder.
 COPY --from=builder /app/whatsapp /app/whatsapp
+# Expose port 3000
+EXPOSE 3000
 # Run the binary.
 ENTRYPOINT ["/app/whatsapp"]
