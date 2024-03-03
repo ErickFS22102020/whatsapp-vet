@@ -10,7 +10,7 @@ import (
 func reloadConnection() {
 	go func() {
 		for range time.Tick(5 * time.Minute) {
-			resp, err := http.Get("https://whatsappvet3-tmohe8jg.b4a.run")
+			resp, err := http.Get("https://whatsapp-vet.onrender.com")
 			if err != nil {
 				fmt.Println("Hubo un error al ejecutar la API:", err)
 				continue
